@@ -1,0 +1,33 @@
+{
+    "name": "@jeefo/form",
+    "version": "0.0.0",
+    "homepage": "https://github.com/je3f0o/jeefo_form",
+    "copyright": "2019",
+    "description": "part of jeefo framework",
+    "author": {
+        "name": "je3f0o",
+        "email": "je3f0o@gmail.com"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "save": "git add . && git c \"`date`\" && git p",
+        "save_version": "git add . && git c \"v$npm_package_version\" && git p",
+        "jeefo_publish": "node node_modules/@jeefo/publish/publish.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:je3f0o/jeefo_monkey_patacher.git"
+    },
+    "keywords": [
+        "jeefo",
+        "je3f0o",
+        "monkey_patcher"
+    ],
+    "dependencies": {
+        "@jeefo/jqlite": "0.0.3"
+    },
+    "devDependencies": {
+        "@jeefo/publish": "0.0.31"
+    }
+}
