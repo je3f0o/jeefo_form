@@ -1,6 +1,6 @@
 {
     "name": "@jeefo/form",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://github.com/je3f0o/jeefo_form",
     "copyright": "2019",
     "description": "part of jeefo framework",
@@ -24,9 +24,7 @@
         "je3f0o",
         "monkey_patcher"
     ],
-    "dependencies": {
-        "@jeefo/jqlite": "0.0.3"
-    },
+    "dependencies": {},
     "devDependencies": {
         "@jeefo/publish": "0.0.31"
     }
