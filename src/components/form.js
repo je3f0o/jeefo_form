@@ -1,7 +1,7 @@
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 * File Name   : form.js
 * Created at  : 2019-12-29
-* Updated at  : 2020-11-12
+* Updated at  : 2020-11-23
 * Author      : jeefo
 * Purpose     :
 * Description :
@@ -135,6 +135,7 @@ exports.controller = class InvisibleJeefoFrom {
         this.on_digest = () => jeefo_form.sync();
 
         await compile.from_elements([form_renderer], component, false);
+        if (component.is_destroyed) return;
         const $form = component.children[0].$element;
 
         $form.on("render", () => jeefo_form.sync());
